@@ -39,3 +39,38 @@ footer {
   justify-content: center;
   align-items: center;
   color: white; }
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center; }
+  .products li {
+    flex: 0 1 10rem;
+    margin: 1rem;
+    margin-bottom: 0;
+    height: 42rem;
+    border-top: 0.2rem solid #e0e0e0; }
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%; }
+  .product img {
+    max-height: 26rem;
+    max-width: 26rem;
+    margin-top: 2rem; }
+  .product-brand {
+    line-height: 1.2rem;
+    margin-bottom: 0; }
+  .product-regular {
+    text-decoration: line-through; }
+  .product-sale {
+    font-weight: bold;
+    color: #3a23ad; }
+    .product-sale:before {
+      content: "\00a0"; }

@@ -16,8 +16,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-areas: 
-  "header" //row
+  grid-template-areas: "header" //row
     "main" //row
     "footer"; //row
   grid-template-columns: 1fr;
@@ -35,21 +34,65 @@ header {
     color: black;
     font-weight: bold;
     text-decoration: none;
-    &:hover{
+    &:hover {
       color: darkmagenta;
     }
   }
 }
 
-.brand{
-  a{
+.brand {
+  a {
     font-size: 3rem;
   }
 }
-footer{
+footer {
   background-color: $main-color;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
+}
+// ////////Products
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  li {
+    flex: 0 1 10rem;
+    margin: 1rem;
+    margin-bottom: 0;
+    height: 42rem;
+    border-top: 0.2rem solid #e0e0e0;
+  }
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  img {
+    max-height: 26rem;
+    max-width: 26rem;
+    margin-top: 2rem;
+  }
+
+  &-brand {
+    line-height: 1.2rem;
+    margin-bottom: 0;
+  }
+  &-regular {
+    text-decoration: line-through;
+  }
+  &-sale {
+    font-weight: bold;
+    color: $main-color;
+    &:before {
+      content: "\00a0";
+    }
+  }
 }

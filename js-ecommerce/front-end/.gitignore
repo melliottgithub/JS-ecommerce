@@ -24,3 +24,6 @@ yarn-error.log*
 
 # API 
 /src/config.js
+
+# data
+/src/data.js
