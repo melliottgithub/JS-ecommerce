@@ -13,7 +13,7 @@ body {
   display: grid;
   grid-template-areas: "header" "main" "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-rows: 6rem 1fr 5rem;
   height: 100%; }
 
 header {
@@ -34,5 +34,8 @@ header {
   font-size: 3rem; }
 
 footer {
-  background-color: #f8f8f8;
-  display: flex; }
+  background-color: #3a23ad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; }
