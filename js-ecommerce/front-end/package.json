@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass --watch scss -o css",
+    "scss": "node-sass --watch src/scss -o src/css",
     "start": "live-server src --verbose",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
