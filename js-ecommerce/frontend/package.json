@@ -5,15 +5,20 @@
   "main": "index.js",
   "scripts": {
     "scss": "node-sass --watch src/scss -o src/css",
-    "start": "live-server src --verbose",
+    "start": "webpack-dev-server --watch-content-base --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "live": "^0.1.25-beta.0",
+    "server": "^1.0.30",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "axios": "^0.20.0",
     "node-sass": "^4.14.1"
   }
 }
