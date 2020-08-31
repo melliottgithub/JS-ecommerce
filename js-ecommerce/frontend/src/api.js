@@ -4,7 +4,7 @@ import { APIURL } from "./config.js";
 export const getProduct = async (id) => {
   try {
     const response = await axios({
-      url: `${APIURL}${id}`,
+      url: `${APIURL}/products/${id}`,
       method: "GET",
       headers: {
         "Content-Type": "application/json",

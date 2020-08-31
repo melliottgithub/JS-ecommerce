@@ -2,7 +2,6 @@ import { parseRequestUrl } from "../utils.js";
 import { getProduct } from "../api.js";
 
 const ProductScreen = {
-  //render: async () => {
   render: async () => {
     //return  `<div>ProductScreen</div>`;
     const request = parseRequestUrl();
