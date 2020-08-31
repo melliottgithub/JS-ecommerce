@@ -5,7 +5,6 @@ const HomeScreen = {
   render: async () => {
 
     let response = await axios({
-      //"http://api.searchspring.net/api/search/search.json?siteId=scmq7n&q=jeans&resultsFormat=native&page=2"
       url:`${APIINITIAL}`,
       headers: { "Content-Type": "application/json" },
     });
