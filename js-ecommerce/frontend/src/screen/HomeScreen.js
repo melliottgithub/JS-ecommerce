@@ -2,8 +2,7 @@ import axios from "axios";
 
 const HomeScreen = {
   render: async () => {
-    //const { results } = data;
-    // console.log(item[0].name);
+
     let response = await axios({
       //"http://api.searchspring.net/api/search/search.json?siteId=scmq7n&q=jeans&resultsFormat=native&page=2"
       url:
@@ -13,28 +12,26 @@ const HomeScreen = {
     if (!response || response.statusText !== 'OK') {
       return `<div>Error in getting data</div>`;
     }
-    let data = response.data;
-    console.log(data);
-    let item = data.results;
+    let items = response.data.results;
 
     return `
         <ul class='products'>
-        ${item
+        ${items
           .map(
-            (item) => `
+            (items) => `
         <li>
               <div class="product">
-                <a href="/product/${item.uid}"
+                <a href="/#/product/${items.sku}"
                   ><img
-                    src="${item.thumbnailImageUrl}"
-                    alt="${item.keywords}"
+                    src="${items.thumbnailImageUrl}"
+                    alt="${items.keywords}"
                 /></a>
                 <div class="product-brand">
-                  ${item.name}
+                  ${items.name}
                 </div>
                 <div class="prices">
-                  <span class="product-regular">$${item.msrp}.00</span>
-                  <span class="product-sale">$${item.price}.00</span>
+                  <span class="product-regular">$${items.msrp}.00</span>
+                  <span class="product-sale">$${items.price}.00</span>
                 </div>
               </div>
             </li>
