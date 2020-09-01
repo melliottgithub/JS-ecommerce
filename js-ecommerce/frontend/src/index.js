@@ -5,7 +5,7 @@ import Error404Screen from "./screen/Error404Screen.js";
 
 const routes = {
   "/": HomeScreen,
-  "/product/:id": ProductScreen,
+  "/products/:id": ProductScreen,
 };
 
 const router = async () => {

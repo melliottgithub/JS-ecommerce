@@ -20,7 +20,7 @@ const HomeScreen = {
             (items) => `
         <li>
               <div class="product">
-                <a href="/#/product/${items.sku}"
+                <a href="/#/products/${items.sku}"
                   ><img
                     src="${items.thumbnailImageUrl}"
                     alt="${items.keywords}"

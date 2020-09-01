@@ -9,7 +9,7 @@ const ProductScreen = {
 
 
 
-    console.log(product);
+    console.log(product, "Hello");
     return `<h1>${product}</h1>`;
   },
 };
