@@ -6,10 +6,7 @@ const ProductScreen = {
     //return  `<div>ProductScreen</div>`;
     const request = parseRequestUrl();
     const product = await getProduct(request.id);
-
-
-
-    console.log(product, "Hello");
+    console.log(product, '...........Product');
     return `<h1>${product}</h1>`;
   },
 };
