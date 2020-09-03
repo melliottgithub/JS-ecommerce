@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass --watch src/scss -o src/css",
+    "scss": "node-sass --watch scss -o css",
     "start": "webpack-dev-server --watch-content-base --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -35,7 +35,7 @@ header {
     font-weight: bold;
     text-decoration: none;
     &:hover {
-      color: darkmagenta;
+      color: $main-color;
     }
   }
 }
@@ -52,7 +52,7 @@ footer {
   align-items: center;
   color: white;
 }
-// ////////Products
+//////////---------Products
 
 .products {
   display: flex;
@@ -93,6 +93,35 @@ footer {
     color: $main-color;
     &:before {
       content: "\00a0";
+    }
+  }
+}
+.content {
+  padding: 1rem;
+}
+//------- Products-Details
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  &-image {
+    flex: 2 1 60rem;
+    img {
+      max-width: 60rem;
+      width: 100%;
+    }
+  }
+  &-info {
+    flex: 1 1 30rem;
+    & ul {
+      padding: 0;
+      list-style-type: none;
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 0;
     }
   }
 }
