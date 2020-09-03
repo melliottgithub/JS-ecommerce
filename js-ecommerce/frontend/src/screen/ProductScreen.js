@@ -20,8 +20,13 @@ const ProductScreen = {
         </div>
         <div class="details-info">
           <ul>
-            <li>${product.name}</li>
-            <li>$${product.msrp}.00 $${product.price}.00</li>
+            <li>
+              <h1>${product.name}</h1>
+            </li>
+            <li>
+              <span class="product-regular">$${product.msrp}.00</span>
+              <span class="product-sale">$${product.price}.00</span>
+            </li>
             <li>
                   ${
                     product.quantity_available > 0
@@ -36,7 +41,9 @@ const ProductScreen = {
                       </button>
                     `
                   }
-            <li>${product.description}</li>
+            <li>
+              <div>${product.description}</div>
+            </li>
           </ul>
         </div>
       </div>

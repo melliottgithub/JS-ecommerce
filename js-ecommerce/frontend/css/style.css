@@ -9,6 +9,23 @@ body {
   font: 1.6rem Helvetica, Arial;
   margin: 0; }
 
+a {
+  color: black;
+  text-decoration: none; }
+  a:hover {
+    color: #3a23ad; }
+
+button {
+  background-color: #3a23ad;
+  color: white;
+  font: 1.6rem helvetica;
+  padding: 1.5rem;
+  border: 0.1rem solid magenta;
+  cursor: pointer; }
+  button:hover {
+    background-color: #4a2ed5;
+    color: white; }
+
 .grid-container {
   display: grid;
   grid-template-areas: "header" "main" "footer";
@@ -65,10 +82,12 @@ footer {
     max-width: 26rem;
     margin-top: 2rem; }
   .product-brand {
+    text-align: center;
     line-height: 2.2rem;
     margin-bottom: 0; }
   .product-regular {
-    text-decoration: line-through; }
+    text-decoration: line-through;
+    color: gray; }
   .product-sale {
     font-weight: bold;
     color: #3a23ad; }
@@ -84,7 +103,7 @@ footer {
   align-items: flex-start;
   flex-wrap: wrap; }
   .details-image {
-    flex: 2 1 60rem; }
+    flex: 0 1 60rem; }
     .details-image img {
       max-width: 60rem;
       width: 100%; }
@@ -96,3 +115,6 @@ footer {
     .details-info h1 {
       font-size: 2rem;
       margin: 0; }
+    .details-info li {
+      margin-bottom: 1rem;
+      margin-left: 1rem; }
