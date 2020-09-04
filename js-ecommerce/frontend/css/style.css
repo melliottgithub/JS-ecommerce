@@ -23,8 +23,7 @@ button {
   border: 0.1rem solid magenta;
   cursor: pointer; }
   button:hover {
-    background-color: #4a2ed5;
-    color: white; }
+    background-color: #4a2ed5; }
 
 .grid-container {
   display: grid;
@@ -38,7 +37,7 @@ header {
   background-color: #f8f8f8;
   color: black;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center; }
   header a {
     color: black;

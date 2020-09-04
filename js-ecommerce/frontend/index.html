@@ -6,121 +6,29 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Javascript Ecommerce</title>
   </head>
-  
+
   <body>
     <div class="grid-container">
       <header>
         <div class="brand">
-          <a href="/#/">Macy</a>
+          <a href="/#/"><h1>Macy</h1></a>
         </div>
         <div>
-          <a>SearchBar</a>
-          <!-- If needed sign-in-->
-          <a href="/#/cart">Cart</a>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="text"
+              placeholder="Search for Brand, Color,Size ..."
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+            <span href="/#/cart">Cart </span>
+            <span id="item"> 0</span>
+          </form>
         </div>
       </header>
-      <main id='main-container'>
-        <!-- <div>
-          <ul class="products">
-            <li>
-              <div class="product">
-                <a href="/#/product/1"
-                ><img
-                src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1254&q=80"
-                alt="img-1"
-                /></a>
-                <div class="product-brand">
-                  Hot mess Lorem ipsum dolor sit amet.
-                </div>
-                <div class="prices">
-                  <span class="product-regular">$200</span>
-                  <span class="product-sale">$100</span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="product">
-                <a href="/#/product/1"
-                ><img
-                src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1254&q=80"
-                alt="img-1"
-                /></a>
-                <div class="product-brand">
-                  Hot mess Lorem ipsum dolor sit amet.
-                </div>
-                <div class="prices">
-                  <span class="product-regular">$200</span>
-                  <span class="product-sale">$100</span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="product">
-                <a href="/#/product/1"
-                ><img
-                src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1254&q=80"
-                alt="img-1"
-                /></a>
-                <div class="product-brand">
-                  Hot mess Lorem ipsum dolor sit amet.
-                </div>
-                <div class="prices">
-                  <span class="product-regular">$200</span>
-                  <span class="product-sale">$100</span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="product">
-                <a href="/#/product/1"
-                ><img
-                src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1254&q=80"
-                alt="img-1"
-                /></a>
-                <div class="product-brand">
-                  Hot mess Lorem ipsum dolor sit amet.
-                </div>
-                <div class="prices">
-                  <span class="product-regular">$200</span>
-                  <span class="product-sale">$100</span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="product">
-                <a href="/#/product/1"
-                ><img
-                src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1254&q=80"
-                alt="img-1"
-                /></a>
-                <div class="product-brand">
-                  Hot mess Lorem ipsum dolor sit amet.
-                </div>
-                <div class="prices">
-                  <span class="product-regular">$200</span>
-                  <span class="product-sale">$100</span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="product">
-                <a href="/#/product/1"
-                ><img
-                src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1254&q=80"
-                alt="img-1"
-                /></a>
-                <div class="product-brand">
-                  Hot mess Lorem ipsum dolor sit amet.
-                </div>
-                <div class="prices">
-                  <span class="product-regular">$200</span>
-                  <span class="product-sale">$100</span>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div> -->
-      </main>
+      <main id="main-container"></main>
       <footer>© 2020 Macy - All rights reserved.</footer>
     </div>
     <script type="module" src="main.js"></script>
